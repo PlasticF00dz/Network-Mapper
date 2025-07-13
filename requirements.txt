@@ -1,0 +1,35 @@
+# Core Dependencies
+netifaces>=0.11.0
+matplotlib>=3.5.0
+networkx>=2.8.0
+numpy>=1.21.0
+
+# Optional Dependencies (for enhanced features)
+scapy>=2.4.5
+python-nmap>=0.7.1
+plotly>=5.0.0
+
+# Standard library dependencies (included with Python)
+# ipaddress (Python 3.3+)
+# sqlite3 (included with Python)
+# json (included with Python)
+# csv (included with Python)
+# threading (included with Python)
+# concurrent.futures (Python 3.2+)
+# subprocess (included with Python)
+# socket (included with Python)
+# time (included with Python)
+# os (included with Python)
+# sys (included with Python)
+# re (included with Python)
+# datetime (included with Python)
+# collections (included with Python)
+# base64 (included with Python)
+# io (included with Python)
+# tempfile (included with Python)
+# glob (included with Python)
+# webbrowser (included with Python)
+# math (included with Python)
+# colorsys (included with Python)
+# struct (included with Python)
+# pickle (included with Python) 

@@ -1,0 +1,20 @@
+{
+  "session": {
+    "id": "scan_20250705_145551",
+    "start_time": "2025-07-05T14:55:51.752556",
+    "target_network": "192.168.1.0/24",
+    "scan_type": "comprehensive",
+    "end_time": "2025-07-05T14:56:12.342887"
+  },
+  "hosts": [],
+  "topology": [],
+  "summary": {
+    "total_hosts": 0,
+    "live_hosts": 0,
+    "total_ports_scanned": 0,
+    "open_ports": 0,
+    "os_distribution": {},
+    "service_distribution": {},
+    "scan_duration": "Unknown"
+  }
+}

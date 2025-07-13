@@ -1,0 +1,202 @@
+{
+  "session": {
+    "id": "smart_scan_20250705_153308",
+    "start_time": "2025-07-05T15:33:08.781604",
+    "target_network": "192.168.29.0/24",
+    "scan_type": "smart",
+    "end_time": "2025-07-05T15:35:39.719491"
+  },
+  "hosts": [
+    {
+      "ip_address": "192.168.29.1",
+      "hostname": "reliance.reliance",
+      "mac_address": "a8:da:0c:32:ed:50",
+      "vendor": "",
+      "os_name": "Linux/Unix",
+      "os_confidence": 0.7,
+      "status": "up",
+      "response_time": 0.0,
+      "ports": [
+        {
+          "port_number": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "https",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 80,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "http",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 443,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "https",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 1900,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "unknown",
+          "banner": "",
+          "version": ""
+        }
+      ]
+    },
+    {
+      "ip_address": "192.168.29.7",
+      "hostname": "DESKTOP-LDE5HJL",
+      "mac_address": "f0:a6:54:04:aa:25",
+      "vendor": "",
+      "os_name": "Windows",
+      "os_confidence": 0.9,
+      "status": "up",
+      "response_time": 0.0,
+      "ports": [
+        {
+          "port_number": 135,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "msrpc",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 139,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "netbios-ssn",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 445,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "microsoft-ds",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 135,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "msrpc",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 139,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "netbios-ssn",
+          "banner": "",
+          "version": ""
+        },
+        {
+          "port_number": 445,
+          "protocol": "tcp",
+          "state": "open",
+          "service": "microsoft-ds",
+          "banner": "",
+          "version": ""
+        }
+      ]
+    },
+    {
+      "ip_address": "192.168.29.104",
+      "hostname": "",
+      "mac_address": "d2:d5:d0:77:65:5b",
+      "vendor": "",
+      "os_name": "Linux/Unix",
+      "os_confidence": 0.7,
+      "status": "up",
+      "response_time": 0.0,
+      "ports": []
+    },
+    {
+      "ip_address": "192.168.29.105",
+      "hostname": "",
+      "mac_address": "",
+      "vendor": "",
+      "os_name": "Linux/Unix",
+      "os_confidence": 0.7,
+      "status": "up",
+      "response_time": 0.0,
+      "ports": []
+    },
+    {
+      "ip_address": "192.168.29.116",
+      "hostname": "",
+      "mac_address": "",
+      "vendor": "",
+      "os_name": "Linux/Unix",
+      "os_confidence": 0.7,
+      "status": "up",
+      "response_time": 0.0,
+      "ports": []
+    },
+    {
+      "ip_address": "192.168.29.146",
+      "hostname": "",
+      "mac_address": "",
+      "vendor": "",
+      "os_name": "Linux/Unix",
+      "os_confidence": 0.7,
+      "status": "up",
+      "response_time": 0.0,
+      "ports": []
+    }
+  ],
+  "topology": [
+    {
+      "hop": 1,
+      "ip": "192.168.29.116",
+      "response_time": 103.66666666666667
+    },
+    {
+      "hop": 1,
+      "ip": "192.168.29.105",
+      "response_time": 187.33333333333334
+    },
+    {
+      "hop": 1,
+      "ip": "192.168.29.146",
+      "response_time": 4.0
+    }
+  ],
+  "summary": {
+    "total_hosts": 6,
+    "live_hosts": 6,
+    "total_ports_scanned": 11,
+    "open_ports": 11,
+    "os_distribution": {
+      "Linux/Unix": 5,
+      "Windows": 1
+    },
+    "service_distribution": {
+      "http": 2,
+      "https": 2,
+      "msrpc": 2,
+      "netbios-ssn": 2,
+      "microsoft-ds": 2
+    },
+    "scan_duration": "Unknown"
+  }
+}

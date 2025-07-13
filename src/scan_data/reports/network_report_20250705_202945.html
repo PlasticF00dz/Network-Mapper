@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NetMapper Network Report</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); 
+        }
+        .header { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            padding-bottom: 20px; 
+            border-bottom: 3px solid #667eea; 
+        }
+        .header h1 { 
+            color: #667eea; 
+            margin: 0; 
+            font-size: 2.5em; 
+            font-weight: 300;
+        }
+        .header .subtitle {
+            color: #666;
+            margin-top: 10px;
+            font-size: 1.1em;
+        }
+        .section { 
+            margin: 30px 0; 
+            padding: 25px; 
+            background: #f8f9fa; 
+            border-radius: 10px; 
+            border-left: 5px solid #667eea; 
+        }
+        .section h2 { 
+            color: #667eea; 
+            margin-top: 0; 
+            font-size: 1.8em;
+        }
+        .summary-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+            gap: 20px; 
+            margin: 20px 0; 
+        }
+        .summary-card { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white;
+            padding: 25px; 
+            border-radius: 10px; 
+            text-align: center; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); 
+            transition: transform 0.3s ease;
+        }
+        .summary-card:hover {
+            transform: translateY(-5px);
+        }
+        .summary-card .value { 
+            font-size: 2.5em; 
+            font-weight: bold; 
+            margin-bottom: 10px;
+        }
+        .summary-card .label { 
+            opacity: 0.9;
+            font-size: 1.1em;
+        }
+        .host-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .host-table th, .host-table td { 
+            padding: 15px; 
+            text-align: left; 
+            border-bottom: 1px solid #eee;
+        }
+        .host-table th { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            color: white; 
+            font-weight: 600;
+        }
+        .host-table tr:hover { 
+            background-color: #f8f9fa; 
+        }
+        .efficiency-badge { 
+            background: linear-gradient(135deg, #28a745 0%, #20c997 100%); 
+            color: white; 
+            padding: 8px 16px; 
+            border-radius: 20px; 
+            font-size: 0.9em; 
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .footer {
+            text-align: center; 
+            margin-top: 40px; 
+            padding-top: 20px; 
+            border-top: 2px solid #eee; 
+            color: #666;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌐 NetMapper Network Report</h1>
+            <div class="subtitle">
+                Session: smart_scan_20250705_193100<br>
+                Target: 192.168.29.0/24 | Type: smart<br>
+                Generated: 2025-07-05 20:29:45
+            </div>
+            <div class="efficiency-badge">⚡ Smart Scanning - Only Responsive Hosts</div>
+        </div>
+
+        <div class="section">
+            <h2>📊 Scan Summary</h2>
+            <div class="summary-grid">
+                <div class="summary-card">
+                    <div class="value">8</div>
+                    <div class="label">Discovered Hosts</div>
+                </div>
+                <div class="summary-card">
+                    <div class="value">6</div>
+                    <div class="label">Live Hosts</div>
+                </div>
+                <div class="summary-card">
+                    <div class="value">11</div>
+                    <div class="label">Open Ports</div>
+                </div>
+                <div class="summary-card">
+                    <div class="value">Unknown</div>
+                    <div class="label">Duration</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔒 Security Analysis</h2>
+            <h4 style='color: #dc3545'>High Risk (2 issues)</h4><ul><li>192.168.29.7:445 - MICROSOFT-DS service detected (SMB file sharing)</li><li>192.168.29.7:445 - MICROSOFT-DS service detected (SMB file sharing)</li></ul><h4 style='color: #fd7e14'>Medium Risk (4 issues)</h4><ul><li>192.168.29.7:135 - MSRPC service detected (Microsoft RPC service)</li><li>192.168.29.7:139 - NETBIOS-SSN service detected (NetBIOS session service)</li><li>192.168.29.7:135 - MSRPC service detected (Microsoft RPC service)</li><li>192.168.29.7:139 - NETBIOS-SSN service detected (NetBIOS session service)</li></ul><h4 style='color: #28a745'>Low Risk (2 issues)</h4><ul><li>192.168.29.1:80 - HTTP service detected (Unencrypted web traffic)</li><li>192.168.29.1:80 - HTTP service detected (Unencrypted web traffic)</li></ul>
+        </div>
+
+        <div class="section">
+            <h2>🖥️ Discovered Hosts</h2>
+            <table class="host-table">
+                <thead>
+                    <tr>
+                        <th>IP Address</th>
+                        <th>Hostname</th>
+                        <th>OS</th>
+                        <th>MAC Address</th>
+                        <th>Open Ports</th>
+                        <th>Services</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                <tr>
+                    <td><strong>192.168.29.1</strong></td>
+                    <td>reliance.reliance</td>
+                    <td>Linux/Unix</td>
+                    <td>a8:da:0c:32:ed:50</td>
+                    <td>80, 443, 80, 443, 1900</td>
+                    <td>http, https, http, https, unknown</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>192.168.29.7</strong></td>
+                    <td>DESKTOP-LDE5HJL</td>
+                    <td>Windows</td>
+                    <td></td>
+                    <td>135, 139, 445, 135, 139, 445</td>
+                    <td>msrpc, netbios-ssn, microsoft-ds, msrpc, netbios-ssn, microsoft-ds</td>
+                </tr>
+                
+                <tr>
+                    <td><strong>192.168.29.45</strong></td>
+                    <td></td>
+                    <td>Linux/Unix</td>
+                    <td>7c:66:ef:e0:9e:47</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>192.168.29.104</strong></td>
+                    <td></td>
+                    <td>Linux/Unix</td>
+                    <td>d2:d5:d0:77:65:5b</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>192.168.29.105</strong></td>
+                    <td></td>
+                    <td>Linux/Unix</td>
+                    <td>76:3e:17:1b:6a:8b</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>192.168.29.116</strong></td>
+                    <td></td>
+                    <td>Linux/Unix</td>
+                    <td>3c:57:6c:2d:08:5a</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>192.168.29.146</strong></td>
+                    <td></td>
+                    <td>Unknown</td>
+                    <td>ce:49:d4:01:e7:56</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td><strong>192.168.29.255</strong></td>
+                    <td></td>
+                    <td>Unknown</td>
+                    <td>ff:ff:ff:ff:ff:ff</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                </tbody>
+            </table>
+        </div>
+
+        <div class="footer">
+            <p><strong>Report generated by NetMapper v2.0 - Optimized Edition</strong></p>
+            <p>⚡ Smart scanning technology - Maximum efficiency, minimum time</p>
+        </div>
+    </div>
+</body>
+</html>

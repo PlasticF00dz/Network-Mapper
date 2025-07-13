@@ -1,0 +1,89 @@
+{
+  "session": {
+    "id": "sample_001",
+    "start_time": "2024-01-15T10:00:00Z",
+    "end_time": "2024-01-15T10:15:00Z",
+    "target_network": "192.168.1.0/24",
+    "scan_type": "comprehensive"
+  },
+  "hosts": [
+    {
+      "ip_address": "192.168.1.1",
+      "hostname": "router.local",
+      "status": "up",
+      "os_name": "Linux",
+      "ports": [
+        {
+          "port_number": 22,
+          "service": "ssh",
+          "state": "open"
+        },
+        {
+          "port_number": 80,
+          "service": "http",
+          "state": "open"
+        },
+        {
+          "port_number": 443,
+          "service": "https",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "ip_address": "192.168.1.10",
+      "hostname": "server.local",
+      "status": "up",
+      "os_name": "Windows Server 2019",
+      "ports": [
+        {
+          "port_number": 3389,
+          "service": "rdp",
+          "state": "open"
+        },
+        {
+          "port_number": 445,
+          "service": "smb",
+          "state": "open"
+        },
+        {
+          "port_number": 135,
+          "service": "rpc",
+          "state": "open"
+        }
+      ]
+    },
+    {
+      "ip_address": "192.168.1.20",
+      "hostname": "workstation.local",
+      "status": "up",
+      "os_name": "Windows 10",
+      "ports": [
+        {
+          "port_number": 135,
+          "service": "rpc",
+          "state": "open"
+        },
+        {
+          "port_number": 445,
+          "service": "smb",
+          "state": "open"
+        }
+      ]
+    }
+  ],
+  "topology": [
+    {
+      "source_ip": "192.168.1.1",
+      "destination_ip": "192.168.1.10",
+      "hop_count": 1,
+      "rtt": 5.2
+    },
+    {
+      "source_ip": "192.168.1.1",
+      "destination_ip": "192.168.1.20",
+      "hop_count": 1,
+      "rtt": 3.1
+    }
+  ]
+}
